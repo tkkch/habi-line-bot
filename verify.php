@@ -5,6 +5,10 @@ $url = 'https://api.line.me/v1/oauth/verify';
 
 $headers = array('Authorization: Bearer ' . $access_token);
 
+$proxy = 'velodrome.usefixie.com:80';
+$proxyauth = 'fixie:R5YfN2Bkou0igij';
+curl_setopt($ch, CURLOPT_PROXY, $proxy);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
