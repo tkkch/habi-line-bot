@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => LineBot นะจ๊ะไม่ใช่คน ไม่ต้องตอบกลับบ่อย
+				'text' => "Line Bot นะไม่ใช่คนมีไรพิม help ได้"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
